@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jan 18 21:27:27 IST 2023</td>
+<td>Started on:</td><td>Thu Jan 19 16:40:47 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>149 seconds (149045 ms)</td>
+<tr><td>Total time:</td><td>23 seconds (23771 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='demo.opencart.TC_HomePage.NavBarMP3PlayerOptionList()'><b>NavBarMP3PlayerOptionList</b><br>Test class: demo.opencart.TC_HomePage<br>Test method: MP3 Players Tab Option list Test</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;dropdown-menu show&apos;]//div[@class=&apos;dropdown-inner&apos;]//ul[@class=&apos;list-unstyled&apos;]//li[6]&quot;}
+<td title='demo.opencart.TC_LoginPage.loginTest()'><b>loginTest</b><br>Test class: demo.opencart.TC_LoginPage</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;dropdown&apos;]//a[@class=&apos;dropdown-toggle show&apos;]&quot;}
   (Session info: chrome=109.0.5414.75)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;PF2J3VVK-AL1&apos;, ip: &apos;192.168.1.124&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\14506437\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49851}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 942b3e6436876424e3912bc893ce2a10
-*** Element info: {Using=xpath, value=//div[@class=&apos;dropdown-menu show&apos;]//div[@class=&apos;dropdown-inner&apos;]//ul[@class=&apos;list-unstyled&apos;]//li[6]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\14506437\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60086}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef14239f3c90feadb29459eda724d3f6
+*** Element info: {Using=xpath, value=//div[@class=&apos;dropdown&apos;]//a[@class=&apos;dropdown-toggle show&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -95,18 +95,21 @@ Session ID: 942b3e6436876424e3912bc893ce2a10
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at demo.opencart.pages.HomePage.validateMp3PlayersTabOptionLinks(HomePage.java:365)
-	at demo.opencart.TC_HomePage.NavBarMP3PlayerOptionList(TC_HomePage.java:76)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1143968486", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1143968486'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;dropdown-menu show&apos;]//div[@class=&apos;dropdown-inner&apos;]//ul[@class=&apos;list-unstyled&apos;]//li[6]&quot;}
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at demo.opencart.pages.LoginPage.Login(LoginPage.java:36)
+	at demo.opencart.TC_LoginPage.loginTest(TC_LoginPage.java:28)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1486553742", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1486553742'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;dropdown&apos;]//a[@class=&apos;dropdown-toggle show&apos;]&quot;}
   (Session info: chrome=109.0.5414.75)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;PF2J3VVK-AL1&apos;, ip: &apos;192.168.1.124&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\14506437\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49851}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 942b3e6436876424e3912bc893ce2a10
-*** Element info: {Using=xpath, value=//div[@class=&apos;dropdown-menu show&apos;]//div[@class=&apos;dropdown-inner&apos;]//ul[@class=&apos;list-unstyled&apos;]//li[6]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\14506437\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60086}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef14239f3c90feadb29459eda724d3f6
+*** Element info: {Using=xpath, value=//div[@class=&apos;dropdown&apos;]//a[@class=&apos;dropdown-toggle show&apos;]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -122,8 +125,11 @@ Session ID: 942b3e6436876424e3912bc893ce2a10
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at demo.opencart.pages.HomePage.validateMp3PlayersTabOptionLinks(HomePage.java:365)
-	at demo.opencart.TC_HomePage.NavBarMP3PlayerOptionList(TC_HomePage.java:76)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at demo.opencart.pages.LoginPage.Login(LoginPage.java:36)
+	at demo.opencart.TC_LoginPage.loginTest(TC_LoginPage.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -150,8 +156,8 @@ Session ID: 942b3e6436876424e3912bc893ce2a10
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>37</td>
-<td>demo.opencart.TC_HomePage@ba54932</td></tr>
+<td>10</td>
+<td>demo.opencart.TC_LoginPage@dd0c991</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -161,45 +167,10 @@ Session ID: 942b3e6436876424e3912bc893ce2a10
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='demo.opencart.TC_HomePage.NavBarCamerasOptionList()'><b>NavBarCamerasOptionList</b><br>Test class: demo.opencart.TC_HomePage<br>Test method: Cameras Tab Option list Test</td>
-<td></td>
-<td>12</td>
-<td>demo.opencart.TC_HomePage@ba54932</td></tr>
-<tr>
-<td title='demo.opencart.TC_HomePage.NavBarComponentsOptionList()'><b>NavBarComponentsOptionList</b><br>Test class: demo.opencart.TC_HomePage<br>Test method: Components Tab Option list Test</td>
-<td></td>
-<td>27</td>
-<td>demo.opencart.TC_HomePage@ba54932</td></tr>
-<tr>
-<td title='demo.opencart.TC_HomePage.NavBarDesktopOptionList()'><b>NavBarDesktopOptionList</b><br>Test class: demo.opencart.TC_HomePage<br>Test method: Desktop Tab Option list Test</td>
-<td></td>
-<td>12</td>
-<td>demo.opencart.TC_HomePage@ba54932</td></tr>
-<tr>
 <td title='demo.opencart.TC_HomePage.NavBarHomePage()'><b>NavBarHomePage</b><br>Test class: demo.opencart.TC_HomePage<br>Test method: Navigation Bar Test</td>
 <td></td>
 <td>0</td>
-<td>demo.opencart.TC_HomePage@ba54932</td></tr>
-<tr>
-<td title='demo.opencart.TC_HomePage.NavBarLaptopNotebookOptionList()'><b>NavBarLaptopNotebookOptionList</b><br>Test class: demo.opencart.TC_HomePage<br>Test method: Laptop&Notebooks Tab Option list Test</td>
-<td></td>
-<td>12</td>
-<td>demo.opencart.TC_HomePage@ba54932</td></tr>
-<tr>
-<td title='demo.opencart.TC_HomePage.NavBarPhonesPDAsOptionList()'><b>NavBarPhonesPDAsOptionList</b><br>Test class: demo.opencart.TC_HomePage<br>Test method: Phones&PDAs Tab Option list Test</td>
-<td></td>
-<td>12</td>
-<td>demo.opencart.TC_HomePage@ba54932</td></tr>
-<tr>
-<td title='demo.opencart.TC_HomePage.NavBarSoftwareOptionList()'><b>NavBarSoftwareOptionList</b><br>Test class: demo.opencart.TC_HomePage<br>Test method: Software Tab Option list Test</td>
-<td></td>
-<td>12</td>
-<td>demo.opencart.TC_HomePage@ba54932</td></tr>
-<tr>
-<td title='demo.opencart.TC_HomePage.NavBarTabletsOptionList()'><b>NavBarTabletsOptionList</b><br>Test class: demo.opencart.TC_HomePage<br>Test method: Tablets Tab Option list Test</td>
-<td></td>
-<td>12</td>
-<td>demo.opencart.TC_HomePage@ba54932</td></tr>
+<td>demo.opencart.TC_HomePage@6bf0219d</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="opencart">
-  <test name="Test">
-  	<classes>
-  	<class name="demo.opencart.TC_HomePage"></class>
-  	
-  	</classes>
-  
-  </test> <!-- Test -->
+	 <test name="HomePageTest">
+		<classes>
+			<class name="demo.opencart.TC_HomePage"></class>
+		</classes>
+	</test>   
+	<test name="LoginTest">
+		<classes>
+			<class name="demo.opencart.TC_LoginPage"></class>
+		</classes>
+	</test>   
+	<test name="RegisterTest">
+		<classes>
+			<class name="demo.opencart.TC_RegisterPage"></class>
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

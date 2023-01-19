@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [opencart]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="HomePageTest(failed)">
     <classes>
       <class name="demo.opencart.TC_HomePage">
         <methods>
           <include name="closeBrowser"/>
+          <include name="searchTest"/>
           <include name="NavBarMP3PlayerOptionList"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- demo.opencart.TC_HomePage -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- HomePageTest(failed) -->
 </suite> <!-- Failed suite [opencart] -->

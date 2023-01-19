@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -17,6 +18,7 @@ public class TestBase {
 	public static Properties prop;
 	public static WebDriver driver;
     public static WebDriverWait wait;
+    public static JavascriptExecutor js;
 
 	public TestBase() 
 	{
@@ -61,11 +63,12 @@ public class TestBase {
 		driver.get(prop.getProperty("url"));
 		Thread.sleep(4000);
 	    wait=new WebDriverWait(driver,30);
+	    js = (JavascriptExecutor) driver;  
 		
 	}
 
 	public static void tearDown() {
-		driver.close();
+		driver.quit();
 	}
 	
 }
